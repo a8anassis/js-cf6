@@ -73,7 +73,6 @@ function showCounter() {
 }
 
 function styleCounterElement(counterDOM) {
-
     counterDOM.classList.toggle('color-green', counter > 0)
     counterDOM.classList.toggle('color-red', counter < 0)
     counterDOM.classList.toggle('color-black', counter === 0)
