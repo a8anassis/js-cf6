@@ -88,3 +88,7 @@
     display: none;    
 }
 
+.line-through {
+    text-decoration:line-through;
+    color: gray;
+}
