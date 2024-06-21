@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', function() {
 })
 
 
-/**
+/** 
  * Actions taken after the 'Decrease' button
  * was clicked. Actions include decrease the counter.
  */
