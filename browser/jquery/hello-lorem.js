@@ -9,4 +9,7 @@ function sayHelloLorem() {
         nostrum odit quisquam necessitatibus, dolore eaque error accusantium ratione 
         sed.`)
     $('body').append($p)
+
+    const $body = $('body')
+    $body.html(`<p class="">Hello</p>`)
 }
