@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter Template</title>
+</head>
+<body>
+    
+    <div>
+        <ul>
+            <li>Java</li>
+            <li id="link">C#</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+       $(function() {
+            $('li').each(function(index, el) {
+                if ($(el).is('#link')) {
+                    $(el).append('<a class="cf-link">Visit us</a>')
+                    $('.cf-link').attr('href', 'https://codingfactory.aueb.gr/el')
+                    return false    // break
+                }
+            })     
+       })
+    </script>
+</body>
+</html>
