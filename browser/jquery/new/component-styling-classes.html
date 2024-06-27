@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter Template</title>
+    <style>
+        .bg-red {
+            background-color: red;
+        }
+
+        .text-white {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        let counter = 0
+
+        const counterComponent = $(`<div>
+            <h1>Counter</h1>
+            <button id="btn" type="button" onclick="increase()">Counter: ${counter}</button>
+            </div>`)
+
+        const styleComponent = $(`<div>
+        <button id="styleBtn" type="button" onclick="styleBgAndText()">Style Bg and Text</button>
+        </div>`)
+
+        $('#root').append(counterComponent)
+        $('#root').append(styleComponent)
+
+        function increase() {
+            counter++
+            $('#btn').text('Counter: ' + counter)
+        }
+
+        function styleBgAndText() {
+            $('body').toggleClass('bg-red')
+            counterComponent.toggleClass('text-white')
+        }
+
+
+    </script>
+</body>
+</html>
